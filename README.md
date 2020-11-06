@@ -1,7 +1,9 @@
 Etherify - bringing the ether back to ethernet
 
 (c) 2020 Jacek Lipkowski SQ5BPF <sq5bpf@lipkowski.org>
-https://lipkowski.com/etherify
+
+Main page here: https://lipkowski.com/etherify
+Demo:  https://youtu.be/ueC4SLPrtNg
 
 These are attempts to transmit via leakage from ethernet.
 
