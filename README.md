@@ -5,6 +5,7 @@ Etherify - bringing the ether back to ethernet
 Main page here: https://lipkowski.com/etherify
 Demo:  https://youtu.be/ueC4SLPrtNg
 
+
 These are attempts to transmit via leakage from ethernet.
 
 
@@ -40,7 +41,8 @@ ethtool eth0  #verify link is up
 ./etherify1.sh                  # or just to send the standard text
 
 
-
+Watch the demo:
+[![Watch the etherify 1 demo](https://img.youtube.com/vi/ueC4SLPrtNg/hqdefault.jpg)](https://youtu.be/ueC4SLPrtNg)
 
 
 ################################################################
