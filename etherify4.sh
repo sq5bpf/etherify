@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # Etherify 4 - silly hack to send data wirelessly by changing the speed
-#              of an ethernet interface. THis is an implementation for
+#              of an ethernet interface. This is an implementation for
 #              devices which change speed slowly
 #
 # (c) 2020 Jacek Lipkowski SQ5BPF <sq5bpf@lipkowski.org>
-# https://lipkowski.com/etherify
+# https://lipkowski.com/etherify4
+#
+# See also: https://lipkowski.com/etherify
 #
 # Tested on two Dell Laptops: Latitude 6220 running debian bullseye 
 # (transmitter) and Latitude D610 running debian stretch (passively sitting
