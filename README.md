@@ -85,6 +85,79 @@ ping 192.168.1.1 #verify you have connectivity
 
 
 
+################################################################
+
+etherify3.sh  - sends data wirelessly by changing the speed of an 
+ethernet interface.
+
+For more info see: https://lipkowski.com/etherify3
+
+Usage:
+
+./etherify3.sh <file>
+
+If <file> is  given, then the contents are sent, else "etherify 3 demo" is sent.
+
+This works by switching between 10Mbps and 100Mbps, which results
+in a change of the electromagnetic radiation that leaks from the ethernet interface.
+Switching to 100Mbps produces a signal at 125MHz, which is used to
+transmit morse code.
+
+
+Tested on a raspberry pi 4 running Raspbian 10 
+without an ethernet connection, and powered via a powerbank.
+
+ethtool eth0  #verify link is down
+
+./etherify3.sh /tmp/secret.txt  #to leak out the contents of /tmp/secret.txt
+./etherify3.sh                  # or just to send the standard text
+
+Now i'm not sure if my particular Raspberry PI 4B leaks so much rf, or if this
+is a general problem.
+
+
+################################################################
+
+etherify4.sh  - sends data wirelessly by changing the speed of an 
+ethernet interface. This is an implementation for devices which
+establish link after several seconds after changing the interface speed.
+
+For more info see: https://lipkowski.com/etherify4
+
+Usage:
+
+./etherify4.sh <file>
+
+If <file> is  given, then the contents are sent, else "etherify 4 demo" is sent.
+
+This works by switching between 10Mbps and 100Mbps, which results
+in a change of the electromagnetic radiation that leaks from the ethernet interface.
+Switching to 100Mbps produces a signal at 125MHz, which is used to
+transmit slow morse code.
+
+
+Tested on two Dell Lattitude laptops (E6220 and D610) connected together via
+a 2m ethernet cable. 
+
+
+./etherify4.sh /tmp/secret.txt  #to leak out the contents of /tmp/secret.txt
+./etherify4.sh                  # or just to send the standard text
+
+
+The symbol length (dot length) is equal to the delay between changing link
+speed and establishing link. This is usually several seconds. To receive
+use any receiver capable of tuning to 125MHz and it's hsrmonics (integer multiples),
+and pipe this into any software which is able to show a slow spectrogram.
+Such software is used for example by amateur radio operators for QRSS CW
+(slow morse code decoded visually). 
+
+The sq5bpf_etherify4.usr file contains an example configuration for 
+DL4YHF Spectrum Lab. When running under linux/wine the audio from 
+the receiver (like gqrx) can be piped to Spectrum Lab via pulseaudio.
+
+[![Watch the etherify 4 demo](https://img.youtube.com/vi/aHbgMt0w4Cc/hqdefault.jpg)](https://youtu.be/aHbgMt0w4Cc)
+
+
 #######################################################
 
 Both were tested on 2 raspberry pi 4 connected together via a 2m 
