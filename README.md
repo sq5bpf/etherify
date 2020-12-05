@@ -157,6 +157,49 @@ the receiver (like gqrx) can be piped to Spectrum Lab via pulseaudio.
 
 [![Watch the etherify 4 demo](https://img.youtube.com/vi/aHbgMt0w4Cc/hqdefault.jpg)](https://youtu.be/aHbgMt0w4Cc)
 
+################################################################
+
+etherify5.sh  - same as etherify4.sh, but transmits using network
+devices (such as switches, routers) by changing the interface speed 
+via SNMP.
+
+For more info see: https://lipkowski.com/etherify5
+
+Usage:
+
+./etherify5.sh <file>
+
+If <file> is  given, then the contents are sent, else "etherify 5 demo" is sent.
+
+This works by switching between 10Mbps and 100Mbps, which results
+in a change of the electromagnetic radiation that leaks from the network device.
+This is used to transmit morse code.
+
+This was tested on two Linksys LGS318 switches. Please edit the etherify5.sh
+script to implement changing speed on your switch. Also please set the 
+switch IP, port and type.
+
+./etherify5.sh /tmp/secret.txt  #to leak out the contents of /tmp/secret.txt
+./etherify5.sh                  # or just to send the standard text
+
+
+The symbol length (dot length) is equal to the delay between changing link
+speed and establishing link. This is usually several seconds, and can be set
+in the script (the LINKDELAY parameter).
+The signal can appear at different frequencies, depending on the switch hardware.
+For example a Linksys LGS318 switch radiates a signal around 50MHz. 
+
+Always test using two devices of the same type (because if two different devices are
+used, then one would not know which one generates the radio signal).
+
+Pipe the receiver audio into any software which is able to show a slow spectrogram.
+Such software is used for example by amateur radio operators for QRSS CW
+(slow morse code decoded visually). 
+
+The sq5bpf_etherify4.usr file contains an example configuration for 
+DL4YHF Spectrum Lab. When running under linux/wine the audio from 
+the receiver (like gqrx) can be piped to Spectrum Lab via pulseaudio.
+
 
 #######################################################
 
