@@ -200,6 +200,7 @@ The sq5bpf_etherify4.usr file contains an example configuration for
 DL4YHF Spectrum Lab. When running under linux/wine the audio from 
 the receiver (like gqrx) can be piped to Spectrum Lab via pulseaudio.
 
+[![Watch the etherify 5 demo](https://img.youtube.com/vi/DK90gS4ZLxs/hqdefault.jpg)](https://youtu.be/DK90gS4ZLxs)
 
 #######################################################
 
