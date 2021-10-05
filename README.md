@@ -5,8 +5,11 @@ Etherify - bringing the ether back to ethernet
 2020 RC3 Conference talk: https://www.youtube.com/watch?v=7ek994-fwNE
 
 Etherify 1 and 2: https://lipkowski.com/etherify (with RPI 4)
+
 Etherify 3: https://lipkowski.com/etherify3/ (with no ethernet cable)
+
 Etherify 4: https://lipkowski.com/etherify4/ (with dell laptops)
+
 Etherify 5: https://lipkowski.com/etherify5/ (with ethernet switches)
 
 These are attempts to transmit via leakage from ethernet.
