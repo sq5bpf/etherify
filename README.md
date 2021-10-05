@@ -2,11 +2,15 @@ Etherify - bringing the ether back to ethernet
 
 (c) 2020 Jacek Lipkowski SQ5BPF <sq5bpf@lipkowski.org>
 
-Main page here: https://lipkowski.com/etherify
-Demo:  https://youtu.be/ueC4SLPrtNg
+2020 RC3 Conference talk: https://www.youtube.com/watch?v=7ek994-fwNE
 
+Etherify 1 and 2: https://lipkowski.com/etherify (with RPI 4)
+Etherify 3: https://lipkowski.com/etherify3/ (with no ethernet cable)
+Etherify 4: https://lipkowski.com/etherify4/ (with dell laptops)
+Etherify 5: https://lipkowski.com/etherify5/ (with ethernet switches)
 
 These are attempts to transmit via leakage from ethernet.
+For more info please read all of the articles on https://lipkowski.com/ AND see the RC3 Conference talk.
 
 
 ################################################################
